@@ -33,6 +33,7 @@
 #include "Kaleidoscope-KeyRoleManager.h"
 #include "Kaleidoscope-LayerFocus.h"
 #include "Kaleidoscope.h"
+#include "Kaleidoscope-PloverHID.h"
 
 #include "kaleidoscope/device/dygma/keyboardManager/universalModules/Focus.h"
 #include "kaleidoscope/Runtime.h"
@@ -51,7 +52,7 @@ KEYMAPS
 
 KALEIDOSCOPE_INIT_PLUGINS
 (
-    EEPROMKeymap, keyRoleManager,
+    EEPROMKeymap, PloverHID, keyRoleManager,
     LEDControl, KeyboardFocus, DynamicMacros,
     /*SideFlash,*/ Focus, MouseKeys, OneShot, LayerFocus,
     HostPowerManagement,
