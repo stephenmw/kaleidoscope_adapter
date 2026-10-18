@@ -52,7 +52,7 @@ KEYMAPS
 
 KALEIDOSCOPE_INIT_PLUGINS
 (
-    EEPROMKeymap, PloverHID, keyRoleManager,
+    EEPROMKeymap, keyRoleManager,
     LEDControl, KeyboardFocus, DynamicMacros,
     /*SideFlash,*/ Focus, MouseKeys, OneShot, LayerFocus,
     HostPowerManagement,
@@ -61,7 +61,8 @@ KALEIDOSCOPE_INIT_PLUGINS
     /*Overlay key plugin — must precede KbdInterface to consume OVERLAY_KEY events first*/
     OverlayKey,
     /*Keyboard API interface*/
-    KbdInterface
+    KbdInterface,
+    PloverHID
 );
 
 result_t kbdfal_ll_base_init( void )
